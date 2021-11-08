@@ -2,7 +2,7 @@ Reactive values just define a value wthin the script tag and start using it anwh
 prefix on defination with $:
 
 example
-
+```
 <script>
 	let firstName="Raptors";
 	let lastName="Beak"
@@ -16,13 +16,13 @@ example
 // Consume the reactive value and if either firstName or lastName changes then name will aslo change
 {name}
 </main>
-
+```
 Event binding on:
 
 inline handler or pass reference to a function that will be called on the event 
 
 on:eventType
-
+```
 <script>
     let color='red'
     const toggleColor=()=>{
@@ -37,9 +37,9 @@ on:eventType
     <button on:click="toggleColor">HandleFunc</button>
 </main>
 
-
-Conditional
-
+```
+Conditionals
+```
 {#if condition}
   {:else}
 {/if}
@@ -50,14 +50,15 @@ example
 {:else}
     <p>Will add stuff on toggles</p>
 {/if}
-
+```
 
 Looping constructs
-    an array usrs each with a name and an id note the key is the (user.id) construct
+    ```an array usrs each with a name and an id note the key is the (user.id) construct
 	<!-- Looping -->
 	{#each users as user (user.id)}
 		<h3>{user.id} : {user.name}</h3>
 	{/each}
+	```
 
 
 All in all so far for the basics
@@ -126,53 +127,7 @@ All in all so far for the basics
 		}
 	}
 </style>
-
-
-
-
-
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 *Psst — looking for a more complete solution? Check out [SvelteKit](https://kit.svelte.dev), the official framework for building web applications of all sizes, with a beautiful development experience and flexible filesystem-based routing.*
