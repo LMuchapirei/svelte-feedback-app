@@ -62,7 +62,7 @@ Looping constructs
 
 All in all so far for the basics
 
-
+```
 <script>
 	let firstName="Raptors";
 	let lastName="Beak"
@@ -131,7 +131,7 @@ All in all so far for the basics
 
 
 
-
+```
 
 
 
