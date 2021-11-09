@@ -1,6 +1,12 @@
 <script>
-    export let count
-    export let average
+
+import {FeedbackStore} from "../stores"
+
+    $:count=$FeedbackStore.length
+	$:ratingTotal=$FeedbackStore.reduce((currTotal,item)=>{
+		return currTotal+item.rating
+	},0)
+	$:average=ratingTotal/count
 </script>
 
 

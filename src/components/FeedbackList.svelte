@@ -20,7 +20,7 @@
 <main>
     <h1>Feedback List</h1>
     {#each $FeedbackStore as feedbackItem (feedbackItem.id) }
-      <div in:scale out:fade="{{duration:500}}"> <FeedbackItem item={feedbackItem} on:delete-feedback/></div>
+      <div in:scale out:fade="{{duration:500}}"> <FeedbackItem item={feedbackItem}/></div>
     {/each}
 
 </main>
